@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+ 	overflow: hidden;
+}
+section{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	min-height: 100vh;
+ 	background: linear-gradient( #E7B7C8, #CDB3D4, #63BCC9 );
+}
+h2{
+   display: block; 
+   position: absolute;
+   font-size: 1.6em;
+   font-weight: bold;
+   top: 40px; 
+   left: 180px;
+}
+.box{
+    position: relative;
+}
+.box .square{
+    position: absolute;
+    backdrop-filter:blur(5px);
+    border: 1px solid #ffff;
+    border-right: 1px solid #ffff;
+    border-bottom: 1px solid #ffff;
+    border-radius: 10px; 
+    animation:animate 10s linear infinite;
+    animation-delay:calc(-1s * var(--i));
+}
+@keyframes animate
+{
+   0%,100%
+   {
+       transform: translateY(-40px);
+   }
+   50%
+   {
+       transform: translateY(40px);
+   }
+}
+.box .square:nth-child(1){
+   top: -50px;
+   right: -95px;
+   width: 100px;
+   height: 100px;
+}
+.box .square:nth-child(2){
+   top: 150px;
+   left: -115px;
+   width: 120px;
+   height: 120px;
+   z-index: 2;
+}
+.box .square:nth-child(3){
+   bottom: 50px;
+   right: -78px;
+   width: 80px;
+   height: 80px;
+   z-index: 2;
+}
+.box .square:nth-child(4){
+   bottom: -80px;
+   left: 100px;
+   width: 50px;
+   height: 50px;
+}
+.box .square:nth-child(5){
+   top: -80px;
+   left: 100px;
+   width: 60px;
+   height: 60px;
+}
+.container{
+    position: relative;
+    width: 460px;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(5px);
+    border: 1px solid #ffff;
+    border-right: 1px solid #ffff;
+    border-bottom: 1px solid #ffff;
+}
+
+.inputBox
+{
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+}
+.inputBox input
+{
+	width: 86%;
+	background: rgba(252, 252, 252, 0.2);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+ 	border-right: 1px solid rgba(255,255,255,0.2);
+ 	border-bottom: 1px solid rgba(255,255,255,0.2);
+ 	font-size: 16px;
+ 	letter-spacing: 1px;	
+}
+button {
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #b38abe;
+   color: black;
+   font-size: 17px;
+   padding: 10px 80px;
+   border: none;
+   cursor: pointer;
+   border-radius: 50px;
+   text-align: center;
+ }
+ 
+button:hover {
+   background-color: #42b7c9;
+   color: white;
+ }
