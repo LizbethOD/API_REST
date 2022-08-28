@@ -12,8 +12,20 @@
 			<div class="square" style="--i:2;"></div>
 			<div class="square" style="--i:3;"></div>
 			<div class="square" style="--i:4;"></div>
+			<div class="container">
 				<h2>Bienvenid@</h2>
-				<img src="https://st.depositphotos.com/1032577/4812/i/450/depositphotos_48129893-stock-photo-frame-with-daisies-and-lettering.jpg">
+				<div class="contenido">
+					<script type="text/javascript" src="/static/js/get_clientes.js"></script>
+					<a href="/templetes/post_cliente.html">Agregar</a>
+        			<table id="clientes_Table">
+
+        			</table>
+
+        			<script async>
+            			document.body.onload = getClientes();
+        			</script>
+				</div>	
+			</div>	
 		</div>
     </section>
 </body>

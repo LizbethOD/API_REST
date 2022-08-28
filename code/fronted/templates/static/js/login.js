@@ -4,7 +4,7 @@ function login(){
     var password = document.getElementById("password");
 
         var request = new XMLHttpRequest();
-        request.open("GET", "https://8000-lizbethod-apirest-52babcwb66f.ws-us54.gitpod.io/user/token/", true);
+        request.open("GET", "https://8000-lizbethod-apirest-52babcwb66f.ws-us60.gitpod.io/user/validate/", true);
         request.setRequestHeader("Accept", "application/json");
         request.setRequestHeader("Authorization", "Basic " + btoa(email.value + ":" + password.value));
         request.setRequestHeader("Content-Type", "application/json");
@@ -25,7 +25,7 @@ function login(){
                     sessionStorage.setItem("token", json.token);
                     mensaje = "Hola, bienvendid@: " + email.value;
                     alert(mensaje);
-                    window.location = "/templates/bienvenida.html";
+                    window.location = "/templates/get_clientes.html";
                 }
             }
         };

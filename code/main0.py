@@ -13,8 +13,8 @@ class UserIN(BaseModel):
     password : str
 
 origins = [
-    "https://8000-lizbethod-apirest-52babcwb66f.ws-us54.gitpod.io/",
-    "https://8080-lizbethod-apirest-52babcwb66f.ws-us54.gitpod.io/templates/",
+    "https://8000-lizbethod-apirest-52babcwb66f.ws-us59.gitpod.io/",
+    "https://8080-lizbethod-apirest-52babcwb66f.ws-us59.gitpod.io/templates/",
     "*",]
 
 app.add_middleware(

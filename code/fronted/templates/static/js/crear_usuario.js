@@ -8,7 +8,7 @@ function crearUsuario(){
     }
 
     var request = new XMLHttpRequest();
-    request.open("POST", "https://8000-lizbethod-apirest-52babcwb66f.ws-us54.gitpod.io/users/", true);
+    request.open("POST", "https://8000-lizbethod-apirest-52babcwb66f.ws-us60.gitpod.io/users/", true);
     request.setRequestHeader("Accept", "application/json");
     request.setRequestHeader("Content-Type", "application/json");
 
